@@ -14,7 +14,6 @@ function os_slideshow_lite_block($op = 'list', $delta = 0, $edit = array()) {
       while ($row = db_fetch_array($result)) {
         $node = node_load($row['nid']);
         if (!empty($node->field_slideshow_machine_name[0]['value'])) {
-          $machine_name = strtolower(str_replace(' ', '_', $node->field_slideshow_machine_name[0]['value']));
           $blocks[$machine_name] = array(
             'info' => $node->title,
             'cache' => BLOCK_NO_CACHE,
