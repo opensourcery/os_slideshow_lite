@@ -115,12 +115,12 @@ function os_slideshow_lite_content_default_fields() {
     'module' => 'text',
     'active' => '1',
     'text_processing' => '0',
-    'max_length' => '',
+    'max_length' => '32',
     'allowed_values' => '',
     'allowed_values_php' => '',
     'widget' => array(
       'rows' => 5,
-      'size' => '23',
+      'size' => '60',
       'default_value' => array(
         '0' => array(
           'value' => 'homepage',
